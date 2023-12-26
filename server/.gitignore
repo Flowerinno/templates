@@ -1,0 +1,15 @@
+node_modules
+
+.env
+
+.DS_Store
+
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+prisma/*
+!prisma/schema.prisma

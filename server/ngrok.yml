@@ -1,0 +1,13 @@
+version: "2"
+authtoken: auth token here
+
+console_ui: false
+
+tunnels:
+  server:
+    domain: condor-logical-monthly.ngrok-free.app
+    proto: http
+    addr: 8000
+  client:
+    proto: http
+    addr: 5173
