@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"packageManager": "yarn@3.2.2",
 	"scripts": {
-		"start": "nodemon src/server.ts"
+		"dev": "sudo tsx watch src/server.ts"
 	},
 	"prisma": {
 		"seed": "ts-node prisma/seed.ts"
@@ -13,12 +13,14 @@
 	"dependencies": {
 		"@prisma/client": "^4.1.0",
 		"@trpc/server": "^10.44.1",
+		"bcrypt": "^5.1.1",
 		"cors": "^2.8.5",
 		"express": "^4.18.1",
 		"jsonwebtoken": "^8.5.1",
 		"zod": "^3.17.10"
 	},
 	"devDependencies": {
+		"@types/bcrypt": "^5.0.2",
 		"@types/cors": "^2.8.17",
 		"@types/express": "^4.17.13",
 		"@types/jsonwebtoken": "^8.5.8",

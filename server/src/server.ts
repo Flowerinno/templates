@@ -5,8 +5,9 @@ import cors from "cors";
 import { createContext } from "./trpc/trpc";
 import { mergeRouter } from "./trpc/trpc";
 import { userRouter } from "./routes/userRouter";
+import { authRouter } from "./routes";
 
-export const appRouter = mergeRouter(userRouter);
+export const appRouter = mergeRouter(userRouter, authRouter);
 export type AppRouter = typeof appRouter;
 
 const app = express();

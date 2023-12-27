@@ -1,0 +1,51 @@
+@import "../../sass//_media.scss";
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	height: 500px;
+
+	h3 {
+		font-size: 20px;
+		color: wheat;
+	}
+
+	form {
+		padding: 10px;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 10px;
+		border: 1px solid wheat;
+		border-radius: 10px;
+		min-height: 200px;
+		min-width: 350px;
+
+		& > * {
+			font-size: 15px;
+			color: wheat;
+		}
+
+		p {
+			font-size: 12px;
+			color: red;
+		}
+
+		button {
+			border: 1px solid wheat;
+			padding: 5px;
+			border-radius: 5px;
+		}
+	}
+
+	@include lte-tablet {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+}

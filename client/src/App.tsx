@@ -4,7 +4,7 @@ import { httpBatchLink } from "@trpc/client";
 import { trpc } from "./api/api";
 import { AppRoutes } from "./routes";
 
-import "./App.css";
+import "./global/global.scss";
 
 function App() {
 	const [queryClient] = useState(() => new QueryClient());
@@ -12,7 +12,7 @@ function App() {
 		trpc.createClient({
 			links: [
 				httpBatchLink({
-					url: import.meta.env.SERVER_URL,
+					url: "http://localhost:8000/trpc",
 				}),
 			],
 		})
